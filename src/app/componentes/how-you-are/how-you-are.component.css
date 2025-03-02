@@ -1,0 +1,108 @@
+.howYouAre_container {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+
+  color: #5c3e5c;
+}
+
+.howYouAre_title--divLogo {
+  width: 80vw;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px 10px 0px 0px;
+
+  background-color: rgb(226, 210, 243);
+}
+
+.howYouAre_title--imageLogo {
+  width: 300px;
+}
+
+.howYouAre_divTitle {
+  height: 50px;
+
+  margin-top: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(226, 210, 243);
+}
+
+.howYouAre_containerQuestions {
+  margin-top: 15px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0px 0px 10px 10px;
+
+  background-color: rgb(226, 210, 243);
+}
+
+.howYouAre_question {
+  margin-bottom: 25px;
+}
+
+.howYouAre_option {
+  height: 200px;
+  width: 70vw;
+
+  gap: 10%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.howYouAre_option--btnOptions {
+  width: 300px;
+  height: 40px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background-color: white;
+}
+
+.howYouAre_option--btnOptions:hover {
+  background-color: #c53b41;
+  color: white;
+}
+
+.howYouAre_result {
+  height: 200px;
+
+  margin-top: 15px;
+
+  gap: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0px 0px 10px 10px;
+
+  background-color: rgb(226, 210, 243);
+}
+
+.howYouAre_h2--result {
+  color: #acc62b;
+}
+
+.howYouAre_h2 {
+  font-family: "Roboto", sans-serif;
+}

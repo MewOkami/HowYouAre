@@ -1,0 +1,37 @@
+<div class="howYouAre_container">
+  <div class="howYouAre_title">
+    <div class="howYouAre_title--divLogo">
+      <img
+        class="howYouAre_title--imageLogo"
+        src="assets/imgs/logoquiz.png"
+        alt=""
+      />
+      <p class="howYouAre_h2">How You Are?</p>
+    </div>
+  </div>
+
+  <div class="howYouAre_divTitle">
+    <h3 class="howYouAre_h2">{{ title }}</h3>
+  </div>
+
+  <div *ngIf="!finished" class="howYouAre_containerQuestions">
+    <div *ngIf="!finished" class="howYouAre_question">
+      <h2 class="howYouAre_h2">{{ questionsSelect.question }}</h2>
+    </div>
+
+    <div *ngIf="!finished" class="howYouAre_option">
+      <button
+        *ngFor="let option of questionsSelect.options; let i = index"
+        (click)="buttonPress(option.alias)"
+        class="howYouAre_option--btnOptions"
+      >
+        {{ option.name }}
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="finished" class="howYouAre_result">
+    <h2 class="howYouAre_h2--result">O seu resultado é:</h2>
+    <p class="howYouAre_h2">{{ answersSelected }}</p>
+  </div>
+</div>
